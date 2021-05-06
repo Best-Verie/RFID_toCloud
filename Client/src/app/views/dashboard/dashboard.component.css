@@ -1,0 +1,135 @@
+.container-fluid{
+  width:100%;
+  height: 100vh;
+  background-color: #fff;
+  color:#000000;
+}
+.landing-content{
+  margin-left: 2em;
+}
+.col-md-4 {
+  position: relative;
+  clip-path: polygon(100% 0, 60% 0, 90% 100%, 0 100%, 0 0);
+  height: 100vh;
+  margin-left: -2em;
+
+}
+.col-md-4::before {
+  background-color: #3D2F87;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  margin-left: -2em;
+}
+
+.span{
+  color:#6C63FF;
+  font-weight: bold;
+  margin-left: 2em;
+  font-style: italic;
+}
+.card-img{
+  margin-top: 15em;
+}
+.card-img img{
+   width:15em;
+}
+
+.table-responsive{
+  margin-top: 15em;
+}
+
+thead {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  font-size: 15px;
+  color: #000000;
+}
+
+img {
+  width: 40px;
+  height: 40px
+}
+
+.name {
+  display: inline-block
+}
+
+.bg-blue {
+  background-color: #EBF5FB;
+  /* border-radius: 8px */
+}
+
+.fa-check,
+.fa-minus {
+  color: #3D2F87
+}
+
+.bg-blue:hover {
+  background-color: #3D2F87;
+  color: #eee;
+  cursor: pointer
+}
+
+.bg-blue:hover .fa-check,
+.bg-blue:hover .fa-minus {
+  background-color: #3D2F87;
+  color: #eee
+}
+
+.table thead th,
+.table td {
+  border: none
+}
+
+td a{
+  padding: 10px;
+  text-decoration: none;
+}
+td a:nth-child(1){
+  color: red;
+}
+td a:nth-child(2){
+  color: green;
+}
+
+td a img{
+  width: 18px;
+}
+td a img:nth-child(1){
+  width: 23px;
+}
+/* */
+
+#spacing-row {
+  height: 20px
+}
+
+.sidenav{
+  margin-top: 10em;
+  padding: 22px;
+  width: 20em;
+}
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  border: 0.1px solid gainsboro;
+  margin-top: 2em;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav img{
+  width: 20px;
+  margin-right: 10px;
+}
+.copyright{
+  margin-top: 20em;
+}

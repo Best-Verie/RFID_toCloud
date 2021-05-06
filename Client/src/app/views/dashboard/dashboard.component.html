@@ -1,0 +1,75 @@
+<div class="container-fluid">
+  <div class="landing-content">
+     <div class="top-content">
+       <div class="row">
+         <div class="col-md-4">
+          <div class="top-logo text-left">
+            <h1><span class="span">R</span>FID</h1>
+           </div>
+           <div class="sidenav">
+            <a href="#">
+              <img src="../../../assets/si-home.svg" alt="" srcset="">
+              Dashboard</a>
+            <a href="#">
+              <img src="../../../assets/si-folder.svg" alt="" srcset="">
+              All Transactions</a>
+            <a href="#">
+              <img src="../../../assets/si-user.svg" alt="" srcset="">
+              Customers</a>
+            <a href="#">
+              <img src="../../../assets/si-arrow-left.svg" alt="" srcset="">
+               Back to home</a>
+          </div>
+
+         </div>
+         <div class="col-md-8">
+          <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#Id</th>
+                        <th scope="col">tagId</th>
+                        <th scope="col">Initial balance</th>
+                        <th scope="col">Transport fare</th>
+                        <th scope="col">New balance</th>
+                        <th scope="col" colspan="2">Action</th>
+
+
+                    </tr>
+                </thead>
+                <tbody *ngFor="let transaction of transactions">
+                    <tr class="bg-blue" >
+                        <td class="pt-3">
+                          {{transaction.id}}
+                        </td>
+                        <td class="pt-3 mt-1">
+                          {{transaction.tagId}}
+                        </td>
+                        <td class="pt-3">
+                          {{transaction.initial_balance}}
+                        </td>
+                        <td class="pt-3">
+                          {{transaction.transport_fare}}
+                        </td>
+                        <td class="pt-3">
+                          {{transaction.new_balance}}
+                        </td>
+                        <td>
+                          <a href="">
+                           <img src="../../../assets/si-delete.svg" alt="">  Delete</a>
+                          <a href="">
+                           <img src="../../../assets/si-edit.svg" alt=""> Update</a>
+                        </td>
+                    </tr>
+                    <tr id="spacing-row">
+                        <td></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+         </div>
+     </div>
+  </div>
+</div>
+</div>
