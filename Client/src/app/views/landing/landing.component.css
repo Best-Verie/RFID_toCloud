@@ -1,0 +1,91 @@
+.container-fluid{
+  width:100%;
+  height: 100vh;
+  background-color:#3D2F87;
+  color:#ffffff;
+  /* font-family: "poppins" sans-serif !important; */
+}
+.landing-content{
+  margin-left: 4em;
+}
+.top-logo{
+  margin-top: 10px;
+  margin-left: 0em;
+}
+.app-desc{
+  margin-top: 18em;
+  margin-left: 0em;
+  margin-right: 15rem;
+  padding: 0.05em;
+}
+.app-desc p{
+  margin-top: 5em;
+  font-size: 15px;
+}
+.app-desc h4{
+  font-weight: bold;
+}
+.span{
+  color:#6C63FF;
+  font-weight: bold;
+  font-style: italic;
+}
+.btn{
+  margin-top: 1em;
+  padding: 15px;
+  width:18em;
+  background-color: #6C63FF;
+  box-shadow: none;
+  border-radius: 0px;
+  text-transform: uppercase;
+}
+.descr-images {
+  margin-top: 10em;
+  margin-left: 2em;
+}
+.descr-images img{
+  width: 50em;
+}
+@media only screen and (max-width: 600px) {
+  .landing-content{
+    margin-left: 0em;
+  }
+  .top-logo{
+    margin-top: 10px;
+    margin-left: 0em;
+  }
+  .app-desc{
+    margin-top: 3em;
+    margin-left: 0em;
+    /* margin-right: 15rem; */
+    padding: 0.05em;
+  }
+  .app-desc p{
+    margin-top: 2em;
+    font-size: 13px;
+  }
+  .app-desc h4{
+    font-weight: bold;
+  }
+  .btn{
+    margin-top: 1em;
+    padding: 5px;
+    width:18em;
+    background-color: #6C63FF;
+    box-shadow: none;
+    border-radius: 0px;
+    text-transform: uppercase;
+  }
+  .descr-images {
+    margin-top: 5em;
+    margin-left: 1em;
+  }
+  .descr-images img{
+    width: 10em;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
