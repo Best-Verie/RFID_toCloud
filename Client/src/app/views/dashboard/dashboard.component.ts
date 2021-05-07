@@ -1,3 +1,4 @@
+import { CardService } from './../../services/card.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,15 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
+  transactions:any=[];
+  constructor(private CardService:CardService) { }
 
-  transactions=[
-    {"id":"#245", "tagId":"6705894776890054750", "initial_balance":"2300", "transport_fare":"300","new_balance":"2000"},
-    {"id":"#245", "tagId":"6705894776890054750", "initial_balance":"2300", "transport_fare":"300","new_balance":"2000"}
+  getAllTransactions(){
+    return this.CardService.getAllTransactions().subscribe((res)=>{
+      this.transactions = res;
+      console.log(this.transactions);
+    })
+  }
 
-  ]
-  constructor() { }
+
 
   ngOnInit(): void {
+    this.getAllTransactions();
   }
 
 }
+
+
+
